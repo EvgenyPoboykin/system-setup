@@ -1,8 +1,8 @@
-#- name: Install kitty
-#  community.general.homebrew_cask:
-#    name: kitty
-#    state: present
-#    sudo_password: "{{ ansible_become_pass }}"
+- name: Install kitty
+  community.general.homebrew_cask:
+    name: kitty
+    state: present
+    sudo_password: "{{ ansible_become_pass }}"
 
 - name: Install docker
   community.general.homebrew_cask:
@@ -33,8 +33,3 @@
     name: windows-app
     state: present
     sudo_password: "{{ ansible_become_pass }}"
-#- name: Install vscode
-#  community.general.homebrew_cask:
-#  name: visual-studio-code
-#state: present
-#sudo_password: "{{ ansible_become_pass }}"

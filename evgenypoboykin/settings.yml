@@ -1,3 +1,19 @@
 - name: Copy zshrc to root
   shell:
     cmd: cp -R ./dotfiles/shell/zshrc ~/.zshrc
+
+- name: Copy fish to root
+  shell:
+    cmd: cp -R ./dotfiles/fish ~/.config/fish
+
+- name: Copy kitty to root
+  shell:
+    cmd: cp -R ./dotfiles/kitty ~/.config/kitty
+
+- name: Copy tmux to root
+  shell:
+    cmd: cp -R ./dotfiles/tmux ~/.config/tmux
+
+- name: Copy tmux.conf to root
+  shell:
+    cmd: cp -R ./dotfiles/shell/tmux ~/.tmux.conf
