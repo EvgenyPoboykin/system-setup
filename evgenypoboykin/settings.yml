@@ -1,0 +1,3 @@
+- name: Copy zshrc to root
+  shell:
+    cmd: cp -R ./dotfiles/shell/zshrc ~/.zshrc

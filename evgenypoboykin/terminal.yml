@@ -1,0 +1,32 @@
+- name: Install fish
+  homebrew:
+    name: fish
+    state: present
+
+- name: Install git
+  homebrew:
+    name: git
+    state: present
+
+- name: Install neovim
+  homebrew:
+    name: neovim
+    state: present
+
+- name: Install nvm
+  homebrew:
+    name: nvm
+    state: present
+
+- name: Install go
+  homebrew:
+    name: go
+    state: present
+
+- name: Install yarn
+  homebrew:
+    name: yarn
+    state: present
+#- name: Install tmux
+# shell:
+# cmd: brew install tmux

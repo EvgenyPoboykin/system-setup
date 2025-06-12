@@ -1,0 +1,40 @@
+#- name: Install kitty
+#  community.general.homebrew_cask:
+#    name: kitty
+#    state: present
+#    sudo_password: "{{ ansible_become_pass }}"
+
+- name: Install docker
+  community.general.homebrew_cask:
+    name: docker
+    state: present
+    sudo_password: "{{ ansible_become_pass }}"
+
+- name: Install google-chrome
+  community.general.homebrew_cask:
+    name: google-chrome
+    state: present
+    sudo_password: "{{ ansible_become_pass }}"
+
+- name: Install firefox
+  community.general.homebrew_cask:
+    name: firefox
+    state: present
+    sudo_password: "{{ ansible_become_pass }}"
+
+- name: Install postman
+  community.general.homebrew_cask:
+    name: postman
+    state: present
+    sudo_password: "{{ ansible_become_pass }}"
+
+- name: Install windows-app
+  community.general.homebrew_cask:
+    name: windows-app
+    state: present
+    sudo_password: "{{ ansible_become_pass }}"
+#- name: Install vscode
+#  community.general.homebrew_cask:
+#  name: visual-studio-code
+#state: present
+#sudo_password: "{{ ansible_become_pass }}"
