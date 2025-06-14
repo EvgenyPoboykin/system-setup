@@ -3,11 +3,6 @@
     name: fish
     state: present
 
-- name: Install git
-  homebrew:
-    name: git
-    state: present
-
 - name: Install neovim
   homebrew:
     name: neovim
@@ -18,16 +13,17 @@
     name: nvm
     state: present
 
-- name: Install go
+- name: Install tmux
   homebrew:
-    name: go
+    name: tmux
     state: present
 
 - name: Install yarn
   homebrew:
     name: yarn
     state: present
-- name: Install tmux
+
+- name: Install go
   homebrew:
-    name: tmux
+    name: go
     state: present
