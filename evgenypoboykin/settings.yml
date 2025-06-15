@@ -1,7 +1,3 @@
-- name: Create root
-  shell:
-    cmd: mkdir ~/.config
-
 - name: Copy kitty to root
   shell:
     cmd: cp -R ./dotfiles/kitty ~/.config/kitty
