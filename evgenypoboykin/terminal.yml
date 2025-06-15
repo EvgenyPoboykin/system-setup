@@ -8,6 +8,11 @@
     name: neovim
     state: present
 
+- name: Install lazygit
+  homebrew:
+    name: lazygit
+    state: present
+
 - name: Install nvm
   homebrew:
     name: nvm

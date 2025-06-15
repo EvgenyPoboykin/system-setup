@@ -2,6 +2,6 @@
 - name: System setup starting
   hosts: localhost
   tasks:
-    - import_tasks: terminal.yml
-    - import_tasks: applications.yml
+    # - import_tasks: terminal.yml
+    # - import_tasks: applications.yml
     - import_tasks: settings.yml
