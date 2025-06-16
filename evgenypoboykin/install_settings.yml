@@ -2,10 +2,30 @@
   shell:
     cmd: cp -R ./dotfiles/.config ~/.config
 
-- name: Linked .zshrc
+- name: Copy .zshrc
   shell:
     cmd: cp -R ./dotfiles/shell/.zshrc ~/.zshrc
 
-- name: Linked .tmux.conf
+- name: Copy .tmux.conf
   shell:
     cmd: cp -R ./dotfiles/shell/.tmux.conf ~/.tmux.conf
+
+- name: Install node 21
+  shell:
+    cmd: nvm install 21
+
+- name: Install node 22
+  shell:
+    cmd: nvm install 22
+
+- name: Install node 23
+  shell:
+    cmd: nvm install 23
+
+- name: Install node 24
+  shell:
+    cmd: nvm install 24
+
+- name: Use default node 23
+  shell:
+    cmd: nvm use 23
