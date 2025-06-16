@@ -1,5 +1,6 @@
-dev.setup:
-	ansible-playbook _start.yml --extra-vars "ansible_become_pass=${pass}"
+dev.install:
+	ansible-playbook _install.yml --extra-vars "ansible_become_pass=${pass}"
 
-dev.remove:
-	echo "remove setup"
+dev.uninstall:
+	ansible-playbook _uninstall.yml --extra-vars "ansible_become_pass=${pass}"
+

@@ -1,0 +1,8 @@
+
+---
+- name: System uninstall starting
+  hosts: localhost
+  tasks:
+    - import_tasks: uninstall_terminal_deps.yml
+    - import_tasks: uninstall_applications.yml
+    - import_tasks: uninstall_settings.yml

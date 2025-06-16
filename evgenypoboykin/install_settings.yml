@@ -1,4 +1,4 @@
-- name: Linked .config 
+- name: Copy settings 
   shell:
     cmd: cp -R ./dotfiles/.config ~/.config
 

@@ -1,0 +1,12 @@
+
+- name: Remove settings 
+  shell:
+    cmd: rm -rf ~/.config
+
+- name: Linked .zshrc
+  shell:
+    cmd: rm ~/.zshrc
+
+- name: Linked .tmux.conf
+  shell:
+    cmd: rm ~/.tmux.conf

@@ -1,0 +1,39 @@
+- name: Install fish
+  homebrew:
+    name: fish
+    state: present
+
+- name: Install fish theme powerlevel10k
+  homebrew:
+    name: powerlevel10k
+    state: present
+
+- name: Install neovim
+  homebrew:
+    name: neovim
+    state: present
+
+- name: Install lazygit
+  homebrew:
+    name: lazygit
+    state: present
+
+- name: Install nvm
+  homebrew:
+    name: nvm
+    state: present
+
+- name: Install tmux
+  homebrew:
+    name: tmux
+    state: present
+
+- name: Install yarn
+  homebrew:
+    name: yarn
+    state: present
+
+- name: Install go
+  homebrew:
+    name: go
+    state: present

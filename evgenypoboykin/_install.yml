@@ -1,0 +1,7 @@
+---
+- name: System install starting
+  hosts: localhost
+  tasks:
+    - import_tasks: install_terminal_deps.yml
+    - import_tasks: install_applications.yml
+    - import_tasks: install_settings.yml
