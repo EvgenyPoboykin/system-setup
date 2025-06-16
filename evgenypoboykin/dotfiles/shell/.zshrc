@@ -13,7 +13,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git)
 
-
 alias v='nvim' # default Neovim config
 
 alias c="clear"
@@ -82,22 +81,6 @@ alias vc="code ."
 alias ta="tmux a"
 alias tn="tmux new -s"
 alias tks="tmux kill-session -t"
-
-alias v="vim"
-
-alias p:sth="PLAYWRIGHT_BASE_URL='http://localhost:3000' PLAYWRIGHT_BASE_ROUTE='/login' npx playwright test --config=./e2e/core/playwright.config.ts --headed -g"
-alias p:st="PLAYWRIGHT_BASE_URL='http://localhost:3000' PLAYWRIGHT_BASE_ROUTE='/login' npx playwright test --config=./e2e/core/playwright.config.ts -g"
-
-alias front="cd ~/Documents/BCS/FRONT"
-alias back="cd ~/Documents/BCS/BACK"
-alias dev="cd ~/Documents/BCS/DEVELOPMENT"
-alias bu="cd ~/Documents/BCS/FRONT/ul"
-alias bf="cd ~/Documents/BCS/FRONT/fl"
-alias bl="cd ~/Documents/BCS/FRONT/libs"
-alias ba="cd ~/Documents/BCS/FRONT/arms"
-alias gd="cd ~/Documents/GO"
-alias rd="cd ~/Documents/RUST"
-alias armul="cd ~/Documents/BCS/FRONT/arms/investment-world-ul-admin-panel"
 
 alias drc="docker builder prune --all"
 alias gb="gradle build"
