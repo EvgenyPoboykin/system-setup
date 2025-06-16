@@ -1,5 +1,3 @@
-
-
 - name: Linked .config 
   shell:
     cmd: cp -R ./dotfiles/.config ~/.config
