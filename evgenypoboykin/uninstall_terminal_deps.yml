@@ -1,9 +1,4 @@
 
-- name: Install fish
-  homebrew:
-    name: fish
-    state: absent
-
 - name: Install fisher
   homebrew:
     name: fisher
@@ -12,6 +7,11 @@
 - name: Install fish theme powerlevel10k
   homebrew:
     name: powerlevel10k
+    state: absent
+
+- name: Install fish
+  homebrew:
+    name: fish
     state: absent
 
 - name: Install neovim
