@@ -2,12 +2,12 @@
 
 - name: Linked .config 
   shell:
-    cmd: ln -s ./dotfiles/.config ~/.config
+    cmd: cp -R ./dotfiles/.config ~/.config
 
 - name: Linked .zshrc
   shell:
-    cmd: ln -s ./dotfiles/shell/.zshrc ~/.zshrc
+    cmd: cp -R ./dotfiles/shell/.zshrc ~/.zshrc
 
 - name: Linked .tmux.conf
   shell:
-    cmd: ln -s ./dotfiles/shell/.tmux.conf ~/.tmux.conf
+    cmd: cp -R ./dotfiles/shell/.tmux.conf ~/.tmux.conf
