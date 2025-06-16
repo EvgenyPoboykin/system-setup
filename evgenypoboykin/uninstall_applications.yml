@@ -1,35 +1,35 @@
 
-- name: Install kitty
+- name: Uninstall kitty
   community.general.homebrew_cask:
     name: kitty
     state: absent
     sudo_password: "{{ ansible_become_pass }}"
 
-- name: Install font-fira-code-nerd-font
+- name: Uninstall font-fira-code-nerd-font
   community.general.homebrew_cask:
     name: font-fira-code-nerd-font
     state: absent
     sudo_password: "{{ ansible_become_pass }}"
 
-- name: Install docker
+- name: Uninstall docker
   community.general.homebrew_cask:
     name: docker
     state: absent
     sudo_password: "{{ ansible_become_pass }}"
 
-- name: Install google-chrome
+- name: Uninstall google-chrome
   community.general.homebrew_cask:
     name: google-chrome
     state: absent
     sudo_password: "{{ ansible_become_pass }}"
 
-- name: Install firefox
+- name: Uninstall firefox
   community.general.homebrew_cask:
     name: firefox
     state: absent
     sudo_password: "{{ ansible_become_pass }}"
 
-- name: Install windows-app
+- name: Uninstall windows-app
   community.general.homebrew_cask:
     name: windows-app
     state: absent

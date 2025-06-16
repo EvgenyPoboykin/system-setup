@@ -1,45 +1,45 @@
 
-- name: Install fisher
+- name: Uninstall fisher
   homebrew:
     name: fisher
     state: absent
 
-- name: Install fish theme powerlevel10k
+- name: Uninstall fish theme powerlevel10k
   homebrew:
     name: powerlevel10k
     state: absent
 
-- name: Install fish
+- name: Uninstall fish
   homebrew:
     name: fish
     state: absent
 
-- name: Install neovim
+- name: Uninstall neovim
   homebrew:
     name: neovim
     state: absent
 
-- name: Install lazygit
+- name: Uninstall lazygit
   homebrew:
     name: lazygit
     state: absent
 
-- name: Install nvm
+- name: Uninstall nvm
   homebrew:
     name: nvm
     state: absent
 
-- name: Install tmux
+- name: Uninstall tmux
   homebrew:
     name: tmux
     state: absent
 
-- name: Install yarn
+- name: Uninstall yarn
   homebrew:
     name: yarn
     state: absent
 
-- name: Install go
+- name: Uninstall go
   homebrew:
     name: go
     state: absent

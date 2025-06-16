@@ -1,12 +1,16 @@
 
-- name: Remove settings 
+- name: Remove config 
   shell:
     cmd: rm -rf ~/.config
 
-- name: Linked .zshrc
+- name: Remove oh-my-zsh 
+  shell:
+    cmd: rm -rf ~/.oh-my-zsh
+
+- name: Remove .zshrc
   shell:
     cmd: rm ~/.zshrc
 
-- name: Linked .tmux.conf
+- name: Remove .tmux.conf
   shell:
     cmd: rm ~/.tmux.conf
