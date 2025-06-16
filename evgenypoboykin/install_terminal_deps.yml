@@ -3,6 +3,11 @@
     name: fish
     state: present
 
+- name: Install fisher
+  homebrew:
+    name: fisher
+    state: present
+
 - name: Install fish theme powerlevel10k
   homebrew:
     name: powerlevel10k
