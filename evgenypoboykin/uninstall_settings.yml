@@ -1,11 +1,18 @@
-
-- name: Remove config 
+- name: Remove config
   shell:
     cmd: rm -rf ~/.config
 
-- name: Remove oh-my-zsh 
+- name: Remove oh-my-zsh
   shell:
     cmd: rm -rf ~/.oh-my-zsh
+
+- name: Remove nvm
+  shell:
+    cmd: rm -rf ~/.nvm
+
+- name: Remove npm
+  shell:
+    cmd: rm -rf ~/.npm
 
 - name: Remove .zshrc
   shell:

@@ -1,4 +1,4 @@
-- name: Copy settings 
+- name: Copy settings
   shell:
     cmd: cp -R ./dotfiles/.config ~/.config
 
@@ -11,21 +11,35 @@
     cmd: cp -R ./dotfiles/shell/.tmux.conf ~/.tmux.conf
 
 - name: Install node 21
-  shell:
-    cmd: nvm install 21
+  shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 21"
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/versions/21"
+    chdir: "{{ ansible_env.HOME }}"
+    executable: /bin/bash
 
 - name: Install node 22
-  shell:
-    cmd: nvm install 22
+  shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 22"
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/versions/22"
+    chdir: "{{ ansible_env.HOME }}"
+    executable: /bin/bash
 
 - name: Install node 23
-  shell:
-    cmd: nvm install 23
+  shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 23"
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/versions/23"
+    chdir: "{{ ansible_env.HOME }}"
+    executable: /bin/bash
 
 - name: Install node 24
-  shell:
-    cmd: nvm install 24
+  shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 24"
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/versions/24"
+    chdir: "{{ ansible_env.HOME }}"
+    executable: /bin/bash
 
-- name: Use default node 23
-  shell:
-    cmd: nvm use 23
+- name: Use node 23
+  shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm use 23"
+  args:
+    chdir: "{{ ansible_env.HOME }}"
+    executable: /bin/bash
