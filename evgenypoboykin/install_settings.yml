@@ -10,6 +10,13 @@
   shell:
     cmd: cp -R ./dotfiles/shell/.tmux.conf ~/.tmux.conf
 
+- name: Install node 20
+  shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 20"
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/versions/20"
+    chdir: "{{ ansible_env.HOME }}"
+    executable: /bin/bash
+
 - name: Install node 21
   shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 21"
   args:
