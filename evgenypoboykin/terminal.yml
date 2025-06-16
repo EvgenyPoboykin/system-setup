@@ -3,6 +3,12 @@
     name: fish
     state: present
 
+- name: Install fish theme powerlevel10k
+  homebrew:
+    name: powerlevel10k
+    state: present
+
+
 - name: Install neovim
   homebrew:
     name: neovim

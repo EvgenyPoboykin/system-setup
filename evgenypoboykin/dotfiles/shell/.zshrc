@@ -7,13 +7,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
-export ZSH="$HOME/.oh-my-zsh"
 
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
 
 alias v='nvim' # default Neovim config
 
@@ -23,9 +22,6 @@ alias f="fzf"
 alias vim:conf="cd ~/.config/nvim/"
 alias v:rust="rust-nvim nvim"
 
-# alias vg='nvim' # default Neovim config
-# alias vr='NVIM_APPNAME=rust-nvim nvim' # NvChad
-# alias v='NVIM_APPNAME=go-nvim nvim' # NvChad
 
 alias t:gen="~/Documents/BCS/FRONT/bcs.sh"
 alias t:gen:e="nvim ~/Documents/BCS/FRONT/bcs.sh"
@@ -131,17 +127,7 @@ alias postgres:stop="brew services stop postgresql"
 
 alias docker:remove="brew uninstall --force --cask docker"
 
-function kt () {
-  gradle build && java -jar -Dspring.profiles.active=dev "./service/build/libs/$1"
-}
-
-function ktstart () {
-  java -jar -Dspring.profiles.active=dev "./service/build/libs/$1"
-}
-
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 export PATH="/opt/homebrew/opt/gradle@7/bin:$PATH"
 
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
