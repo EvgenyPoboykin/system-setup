@@ -16,7 +16,7 @@
 
 - name: Copy .tmux
   shell:
-    cmd: cp -R ./dotfiles/shell/.tmux ~/.tmux
+    cmd: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 - name: Install node 20
   shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 20"
