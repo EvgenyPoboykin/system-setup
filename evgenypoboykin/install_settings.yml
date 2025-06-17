@@ -6,9 +6,17 @@
   shell:
     cmd: cp -R ./dotfiles/shell/.zshrc ~/.zshrc
 
+- name: Copy .oh-my-zsh
+  shell:
+    cmd: cp -R ./dotfiles/shell/.oh-my-zsh ~/.oh-my-zsh
+
 - name: Copy .tmux.conf
   shell:
     cmd: cp -R ./dotfiles/shell/.tmux.conf ~/.tmux.conf
+
+- name: Copy .tmux
+  shell:
+    cmd: cp -R ./dotfiles/shell/.tmux ~/.tmux
 
 - name: Install node 20
   shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 20"

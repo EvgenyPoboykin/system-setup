@@ -13,3 +13,7 @@
 - name: Remove .tmux.conf
   shell:
     cmd: rm ~/.tmux.conf
+
+- name: Remove .tmux
+  shell:
+    cmd: rm ~/.tmux
