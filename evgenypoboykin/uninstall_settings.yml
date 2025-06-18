@@ -6,6 +6,10 @@
   shell:
     cmd: rm -rf ~/.oh-my-zsh
 
+- name: Remove .tmux
+  shell:
+    cmd: rm -rf ~/.tmux
+
 - name: Remove .zshrc
   shell:
     cmd: rm ~/.zshrc
@@ -13,7 +17,3 @@
 - name: Remove .tmux.conf
   shell:
     cmd: rm ~/.tmux.conf
-
-- name: Remove .tmux
-  shell:
-    cmd: rm ~/.tmux
