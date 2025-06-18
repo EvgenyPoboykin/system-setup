@@ -21,6 +21,8 @@ alias f="fzf"
 alias vim:conf="cd ~/.config/nvim/"
 alias v:rust="rust-nvim nvim"
 
+alias coffe="caffeinate"
+
 
 alias t:gen="~/Documents/BCS/FRONT/bcs.sh"
 alias t:gen:e="nvim ~/Documents/BCS/FRONT/bcs.sh"
