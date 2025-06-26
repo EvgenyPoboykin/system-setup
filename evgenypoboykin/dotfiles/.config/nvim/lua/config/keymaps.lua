@@ -41,15 +41,15 @@ keymap("n", "sl", 'gui"')
 
 -- Diagnostics
 keymap("n", "<C-j>", function()
-  vim.diagnostic.goto_next()
+	vim.diagnostic.goto_next()
 end, opts)
 
 keymap("n", "[c", function()
-  require("treesitter-context").go_to_context(vim.v.count1)
+	require("treesitter-context").go_to_context(vim.v.count1)
 end, { silent = true })
 
 keymap("n", "<leader>r", function()
-  require("craftzdog.utils").replaceHexWithHSL()
+	require("craftzdog.utils").replaceHexWithHSL()
 end)
 
 -- VISUAL MODE
