@@ -34,8 +34,14 @@
     state: absent
     sudo_password: "{{ ansible_become_pass }}"
 
-- name: Install figma
+- name: Uninstall figma
   community.general.homebrew_cask:
     name: figma
+    state: absent
+    sudo_password: "{{ ansible_become_pass }}"
+
+- name: Uninstall dbeaver-community
+  community.general.homebrew_cask:
+    name: dbeaver-community
     state: absent
     sudo_password: "{{ ansible_become_pass }}"
